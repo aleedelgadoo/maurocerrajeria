@@ -14,33 +14,36 @@ const Location: React.FC<LocationProps> = ({
   mapImageMobileUrl = '/mapamobile.png',
 }) => {
   return (
-    <section id="ubicacion" className="relative w-full overflow-hidden bg-white lg:bg-transparent">
-      {/* Contenedor del Mapa: Reducimos la altura en mobile (h-[280px] sm:h-[320px]) para eliminar los espacios de sobra */}
-      <div className="relative w-full h-[280px] sm:h-[320px] lg:absolute lg:inset-0 lg:h-[500px] flex items-center justify-center bg-[#FAF8F5]">
+    <section
+      id="ubicacion"
+      className="relative w-full overflow-hidden bg-white lg:bg-transparent"
+    >
+      <div className="relative flex h-[280px] w-full items-center justify-center bg-[#FAF8F5] sm:h-[320px] lg:absolute lg:inset-0 lg:h-[500px]">
+        
         {/* Imagen DESKTOP */}
         <img
-          src={mapImageUrl}
+          src="/mapa.webp"
           alt="Mapa de ubicación"
-          className="absolute inset-0 w-full h-full object-cover object-[center_42%] hidden lg:block"
+          className="absolute inset-0 hidden h-full w-full object-cover object-[center_42%] lg:block"
           loading="lazy"
         />
-        
+
         {/* Imagen MOBILE */}
         <img
-          src={mapImageMobileUrl}
+          src="/mapamobile.png"
           alt="Mapa de ubicación (versión móvil)"
-          className="w-full h-full object-contain p-1 sm:p-0 block lg:hidden"
+          className="block h-full w-full object-contain p-1 sm:p-0 lg:hidden"
           loading="lazy"
         />
       </div>
 
-      {/* Contenedor del Texto: Reducimos el padding vertical a py-4 sm:py-6 en mobile para acercarlo al mapa */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-0 lg:h-[500px] flex items-center justify-center lg:justify-end">
-        <div className="w-full sm:max-w-md bg-white/95 lg:bg-transparent p-5 sm:p-6 lg:p-0 rounded-2xl lg:rounded-none shadow-sm lg:shadow-none text-center lg:text-left">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-3">
+      <div className="relative z-10 mx-auto flex h-auto w-full max-w-7xl items-center justify-center px-4 py-4 sm:px-6 sm:py-6 lg:h-[500px] lg:justify-end lg:px-8 lg:py-0">
+        <div className="w-full rounded-2xl bg-white/95 p-5 text-center shadow-sm sm:max-w-md sm:p-6 lg:rounded-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none">
+          <h2 className="mb-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             {title}
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+
+          <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
             {description}
           </p>
         </div>
