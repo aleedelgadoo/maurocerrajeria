@@ -15,19 +15,25 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between max-w-7xl mx-auto">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-              <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-slate-900">Mauro Cerrajería</span>
-          </div>
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 overflow-visible">
+      {/* Contenedor sin padding lateral y con posición relativa estricta */}
+      <div className="relative w-full px-0">
+        
+        {/* LOGO POSICIONADO CON CSS PURO FUERA DE LAS RESTRICCIONES DE CONTENEDOR */}
+        <div className="absolute left-[-8px] sm:left-0 top-1/2 -translate-y-1/2 z-30 overflow-visible pointer-events-none">
+          <a href="#" className="flex items-center pointer-events-auto">
+            <img 
+              src="/icon.webp" 
+              alt="Logo" 
+              style={{ width: '180px', height: '180px', maxWidth: 'none' }}
+              className="sm:w-[210px] sm:h-[210px] lg:w-[240px] lg:h-[240px] object-contain drop-shadow-2xl" 
+            />
+          </a>
+        </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+        {/* Barra de navegación con espacio izquierdo masivo reservado para que el logo gigante no tape los links */}
+        <div className="flex h-32 items-center justify-between pl-44 sm:pl-56 lg:pl-64 pr-4 sm:pr-8 max-w-7xl mx-auto">
+          <div className="hidden md:flex items-center gap-8 ml-auto">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -37,11 +43,11 @@ const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-          </nav>
+          </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-100"
+            className="md:hidden ml-auto inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-100"
             aria-label="Abrir menú"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -55,7 +61,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 pt-2 border-t border-slate-100 px-4">
             <nav className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <a

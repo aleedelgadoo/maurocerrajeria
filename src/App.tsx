@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import CoverageSection from './components/Location';
+import Location from './components/Location';
 import TrustBanner from './components/TrustBanner';
 import Contacto from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <Services />
-      <CoverageSection />
+      <Location />
       <TrustBanner />
       <Contacto />
       <WhatsAppButton />
