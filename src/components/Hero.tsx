@@ -13,6 +13,19 @@ const Hero: React.FC<HeroProps> = ({
   ctaText = 'Contactanos Ahora',
   onCtaClick,
 }) => {
+  // Función para manejar el clic y hacer scroll suave hacia la sección de contacto
+  const handleClick = () => {
+    if (onCtaClick) {
+      onCtaClick();
+      return;
+    }
+
+    const contactSection = document.getElementById('contacto');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full overflow-hidden font-sans">
       <div className="relative w-full">
@@ -51,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({
 
             <div>
               <button
-                onClick={onCtaClick}
+                onClick={handleClick}
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-3.5 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:scale-[1.02] hover:bg-slate-800 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
               >
                 {ctaText}
@@ -85,7 +98,7 @@ const Hero: React.FC<HeroProps> = ({
             </p>
 
             <button
-              onClick={onCtaClick}
+              onClick={handleClick}
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-slate-800 active:scale-[0.98]"
             >
               {ctaText}
@@ -119,7 +132,7 @@ const Hero: React.FC<HeroProps> = ({
               </p>
 
               <button
-                onClick={onCtaClick}
+                onClick={handleClick}
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-xs font-medium text-white shadow-sm transition-all duration-200 hover:bg-slate-800 active:scale-[0.98]"
               >
                 {ctaText}
