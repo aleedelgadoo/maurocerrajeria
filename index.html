@@ -31,6 +31,12 @@
       href="https://cerrajeriamauro.pages.dev/"
     />
 
+    <!-- Nombre del sitio -->
+    <meta
+      property="og:site_name"
+      content="Mauro Cerrajería"
+    />
+
     <!-- Favicon / Logo -->
     <link
       rel="icon"
@@ -56,7 +62,7 @@
 
     <meta
       property="og:description"
-      content="Cerrajero en Capilla del Monte, Córdoba. Apertura de puertas y vehículos, cambio y reparación de cerraduras e instalación de cerraduras."
+      content="Cerrajero en Capilla del Monte, Córdoba. Apertura de puertas y vehículos, cambio, instalación y reparación de cerraduras y apertura de cajas fuertes."
     />
 
     <meta
@@ -70,7 +76,10 @@
     />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
 
     <link
       rel="preconnect"
@@ -83,7 +92,25 @@
       rel="stylesheet"
     />
 
-    <!-- Datos estructurados: negocio local -->
+    <!--
+      Datos estructurados: nombre del sitio
+      Ayuda a Google a identificar "Mauro Cerrajería"
+      como el nombre preferido del sitio.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://cerrajeriamauro.pages.dev/#website",
+        "name": "Mauro Cerrajería",
+        "alternateName": "Cerrajero en Capilla del Monte",
+        "url": "https://cerrajeriamauro.pages.dev/"
+      }
+    </script>
+
+    <!--
+      Datos estructurados: negocio local
+    -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -108,6 +135,7 @@
         ],
         "serviceType": [
           "Cerrajería",
+          "Cerrajero",
           "Apertura de puertas",
           "Apertura de vehículos",
           "Cambio de cerraduras",
