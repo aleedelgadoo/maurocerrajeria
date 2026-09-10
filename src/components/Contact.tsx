@@ -63,14 +63,14 @@ const Contacto: React.FC = () => {
 
               {/* Mail */}
               <a
-                href="mailto:contacto@tudominio.com"
+                href="mailto:maupopov@gmail.com"
                 className="bg-white text-slate-900 shadow-sm border border-slate-100 rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="h-12 w-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Mail className="h-6 w-6" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-1">Correo</h3>
-                <p className="text-slate-500 text-sm mb-4">Consultas formales</p>
+                <p className="text-slate-500 text-xs sm:text-sm mb-4 break-all">maupopov@gmail.com</p>
                 <span className="mt-auto text-sm font-medium text-indigo-600 group-hover:underline">
                   Enviar mail &rarr;
                 </span>
