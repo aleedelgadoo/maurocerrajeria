@@ -70,11 +70,15 @@ const Services: React.FC = () => {
         <div className="w-full lg:w-2/5 bg-white flex items-center justify-center p-6 sm:p-8 lg:p-12">
           <div className="max-w-md text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4 sm:mb-6">
-              Un problema con tu cerradura no puede esperar
+              <h2>
+  Servicios de cerrajería en Capilla del Monte
+</h2>
+
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-              Servicio de urgencias disponible las 24 horas. Soluciones rápidas y seguras ante cualquier imprevisto.
-            </p>
+  Ofrecemos servicios de cerrajería para viviendas y vehículos
+  en Capilla del Monte y localidades cercanas. Realizamos aperturas,
+  cambios, reparaciones e instalación de cerraduras.            </p>
           </div>
         </div>
 

@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({
   title = 'Cerrajero en Capilla del Monte',
-  subtitle = 'Cerrajero en Capilla del Monte, Córdoba, con atención rápida y profesional. Apertura de puertas y vehículos, cambio, instalación y reparación de cerraduras y apertura de cajas fuertes.',
+  subtitle = 'Servicio de cerrajería a domicilio para hogares y vehículos. Apertura de puertas y autos, cambio y reparación de cerraduras, instalación de cerraduras de seguridad y apertura de cajas fuertes.',
   ctaText = 'Contactanos Ahora',
   onCtaClick,
 }) => {

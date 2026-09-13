@@ -49,37 +49,154 @@
     </script>
 
     <!-- Datos estructurados: Negocio Local (Locksmith) optimizado -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Locksmith",
-        "@id": "https://cerrajeriamauro.pages.dev/#business",
-        "name": "Mauro Cerrajería",
-        "url": "https://cerrajeriamauro.pages.dev/",
-        "image": "https://cerrajeriamauro.pages.dev/icon.webp",
-        "description": "Servicio profesional de cerrajería en Capilla del Monte, Córdoba. Apertura de puertas y vehículos, cambio, instalación y reparación de cerraduras y apertura de cajas fuertes.",
-        "priceRange": "$$",
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Capilla del Monte"
-          },
-          {
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cerrajeriamauro.pages.dev/#website",
+      "url": "https://cerrajeriamauro.pages.dev/",
+      "name": "Mauro Cerrajería",
+      "alternateName": "Cerrajero en Capilla del Monte",
+      "description": "Servicio profesional de cerrajería en Capilla del Monte, Córdoba.",
+      "inLanguage": "es-AR",
+      "publisher": {
+        "@id": "https://cerrajeriamauro.pages.dev/#business"
+      }
+    },
+    {
+      "@type": "Locksmith",
+      "@id": "https://cerrajeriamauro.pages.dev/#business",
+      "name": "Mauro Cerrajería",
+      "url": "https://cerrajeriamauro.pages.dev/",
+      "image": [
+        "https://cerrajeriamauro.pages.dev/icon.webp"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cerrajeriamauro.pages.dev/icon.webp"
+      },
+      "description": "Servicio profesional de cerrajería en Capilla del Monte, Córdoba. Apertura de puertas y vehículos, cambio, instalación y reparación de cerraduras y apertura de cajas fuertes.",
+      "telephone": "+5491139202220",
+      "priceRange": "$$",
+      "currenciesAccepted": "ARS",
+      "paymentAccepted": "Efectivo, transferencia",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Capilla del Monte",
+          "containedInPlace": {
             "@type": "AdministrativeArea",
-            "name": "Valle de Punilla"
-          },
-          {
-            "@type": "State",
             "name": "Córdoba"
           }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Capilla del Monte",
-          "addressRegion": "Córdoba",
-          "addressCountry": "AR"
         },
-        "openingHoursSpecification": {
+        {
+          "@type": "City",
+          "name": "La Cumbre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Córdoba"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "San Esteban",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Córdoba"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Charbonier",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Córdoba"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Capilla del Monte",
+        "addressRegion": "Córdoba",
+        "addressCountry": "AR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5491139202220",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "Spanish"
+        ],
+        "areaServed": "AR"
+      },
+      "knowsAbout": [
+        "Cerrajería",
+        "Apertura de puertas",
+        "Apertura de vehículos",
+        "Cambio de cerraduras",
+        "Instalación de cerraduras",
+        "Reparación de cerraduras",
+        "Cajas fuertes",
+        "Cerrajería de urgencia"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de cerrajería",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apertura de puertas",
+              "serviceType": "Cerrajería"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apertura de vehículos",
+              "serviceType": "Cerrajería automotriz"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cambio de cerraduras",
+              "serviceType": "Cerrajería"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Instalación de cerraduras",
+              "serviceType": "Cerrajería"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reparación de cerraduras",
+              "serviceType": "Cerrajería"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apertura de cajas fuertes",
+              "serviceType": "Cerrajería"
+            }
+          }
+        ]
+      },
+      "openingHoursSpecification": [
+        {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
             "Monday",
@@ -93,8 +210,12 @@
           "opens": "00:00",
           "closes": "23:59"
         }
-      }
-    </script>
+      ]
+    }
+  ]
+}
+</script>
+
   </head>
 
   <body>
