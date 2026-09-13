@@ -58,66 +58,6 @@ const App: React.FC = () => {
 
         <TrustBanner />
 
-        <section
-          id="preguntas-frecuentes"
-          aria-labelledby="faq-title"
-          className="bg-white px-6 py-16 sm:px-8 lg:px-12 lg:py-20"
-        >
-          <div className="mx-auto max-w-4xl">
-            <h2
-              id="faq-title"
-              className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
-            >
-              Preguntas frecuentes sobre cerrajería
-            </h2>
-
-            <div className="mt-8 space-y-6">
-              <article>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  ¿Qué servicios de cerrajería realizan?
-                </h3>
-                <p className="mt-2 leading-relaxed text-slate-600">
-                  Realizamos apertura de puertas y vehículos, cambio,
-                  instalación y reparación de cerraduras y apertura de cajas
-                  fuertes.
-                </p>
-              </article>
-
-              <article>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  ¿Atienden en Capilla del Monte?
-                </h3>
-                <p className="mt-2 leading-relaxed text-slate-600">
-                  Sí. El servicio está orientado principalmente a Capilla del
-                  Monte y también se atienden localidades cercanas según
-                  disponibilidad y distancia.
-                </p>
-              </article>
-
-              <article>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  ¿Realizan aperturas de vehículos?
-                </h3>
-                <p className="mt-2 leading-relaxed text-slate-600">
-                  Sí. Se realizan servicios de apertura de vehículos cuando
-                  las llaves quedan dentro, se pierden o existe un problema
-                  con la cerradura.
-                </p>
-              </article>
-
-              <article>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  ¿Pueden cambiar una cerradura?
-                </h3>
-                <p className="mt-2 leading-relaxed text-slate-600">
-                  Sí. Se realizan cambios y reemplazos de cerraduras y
-                  cilindros, además de instalación de nuevas cerraduras.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <Contacto />
       </main>
 
